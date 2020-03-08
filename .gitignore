@@ -131,6 +131,7 @@ dmypy.json
 # giter files
 _*.py
 _*.sh
+./image/_image_to_illustrate.png
 
 # data files
 ./data/*
