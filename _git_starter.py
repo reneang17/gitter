@@ -9,7 +9,7 @@ import argparse
 
 # 1.- Customize these variables
 git_username = 'reneang17'
-travis_user = 'reneang17'
+travis_username = 'reneang17'
 author = 'Rene Angeles'
 author_email = 'reneang17@gmail.com'
 
@@ -44,7 +44,7 @@ readme_content = \
 """.format(package_name)
 if add_travis:
     readme_content+=\
-    "[![Build Status](https://travis-ci.com/{0}/{1}.svg?branch=master)](https://travis-ci.com/{0}/{1})\n".format(travis_user,git_repo_name)
+    "[![Build Status](https://travis-ci.com/{0}/{1}.svg?branch=master)](https://travis-ci.com/{0}/{1})\n".format(travis_username,git_repo_name)
 
 write_script(dir = './', script_name = 'README.md',
     script_content = readme_content)
