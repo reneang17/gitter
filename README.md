@@ -42,3 +42,6 @@ e.g $python _git_starter.py --git_repo_name a_git_repo_name --package_name Aweso
 
 voilà! you can go to https://github.com/git_username/git_repo_name and will find 
 something like this:
+
+
+![library.](./_image_to_illustrate.png)
