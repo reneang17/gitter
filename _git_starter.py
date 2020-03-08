@@ -140,9 +140,9 @@ if add_template_dirs:
         github_bash_content+="""git add {}\n""".format(dir)
 
 github_bash_content+="""
-#git commit -m "first commit"
-#git remote add origin {}.git
-#git push -u origin master
+git commit -m "first commit"
+git remote add origin {}.git
+git push -u origin master
 """.format(url)
 
 write_script('.', '_first_commit.sh', github_bash_content)
