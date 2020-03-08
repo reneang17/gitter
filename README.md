@@ -4,9 +4,10 @@ My friend [Tom McClintock](https://github.com/tmcclintock) gave me a seminar on 
 
 Enjoy!
 
-This repo creates and commits for you a template to develope a python package on github.It features awesome development practices: test, setup.py, requirements.txt, and travis continuous integration support.
+To summarize, clone this repo and run, se details below, _git_starter.py. To initialize a project, with a MIT Licence,
+REAME.md, notebooks, .gitnore, a package, installed (setup.py, requirements.txt), create a test module, smoke test package, and add travis continuous integration support.
 
-## Instributions 
+## How to use. 
 
 0 .- (Only once) Fork and clone this repo to your local computer, 
 open _git_starter.py, customize the following settings
