@@ -29,7 +29,9 @@ Every time you want to start a new project follow the next steps
 
 3 .- Create a folder into you local computer and run
 $mkdir Awesome_Repo
+
 $cd Awesome_Repo
+
 $git cone https://github.com/your_github_username/giter
 
 4.- Finally run _git_starter.py parsing the following arguments
