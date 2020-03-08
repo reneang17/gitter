@@ -124,7 +124,7 @@ github_bash_content = \
 rm -rf .git
 cd ..
 mv giter {0}
-cd {1}
+cd {0}
 pip install requirements.txt
 python setup.py install && pytest
 git init
