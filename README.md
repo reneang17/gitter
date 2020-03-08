@@ -1,8 +1,8 @@
 # Giter
 
-My friend [Tom McClintock](https://github.com/tmcclintock) gave me a seminar on his awesome [first 10 commits](https://docs.google.com/presentation/d/1rJyTpUZPaCXiz43ZHQmCiq-1rEsflbFS8aCv7bgBl7Q/edit?usp=sharing) to start a new data-oriented project using best practices. This is a script I wrote to authomate these commits so you can jump straight to your project. Future improvements will include some data cleaning libraries and some basic exploratory data analysis, for structure and un-structured data.
+My friend [Tom McClintock](https://github.com/tmcclintock) gave me a seminar on his awesome [first 10 commits](https://docs.google.com/presentation/d/1rJyTpUZPaCXiz43ZHQmCiq-1rEsflbFS8aCv7bgBl7Q/edit?usp=sharing) to start a new data-oriented project using best practices. This is a script I wrote to authomate these commits so you can jump straight to your project. Future improvements will include some data cleaning libraries and some basic exploratory data analysis, for structured and un-structured data.
 
-Succincly, clone this repo and run `_git_starter.py` to initialize a project with a MIT Licence, `REAME.md`, `notebooks` directory, `.gitnore`, a source directory, installation files (e.g. `setup.py`, `requirements.txt`), create a unit test directory with initial tests (smoke tests), and add travis continuous integration support.
+Succincly, clone this repo and run `_git_starter.py` to initialize a project with a MIT Licence, `REAME.md`, `notebooks` directory, `.gitignore`, a source directory, installation files (e.g. `setup.py`, `requirements.txt`), create a unit test directory with initial tests (smoke tests), and add (travis-CI)[https://travis-ci.com/] support.
 
 Enjoy!
 
