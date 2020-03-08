@@ -12,18 +12,22 @@ git_username = 'reneang17'
 travis_user = 'reneang17'
 author = 'Rene Angeles'
 author_email = 'reneang17@gmail.com'
-add_template_dirs = True # add notebooks and data folder
-add_travis = True # whether or not to add travis yml
 
 
-# 2. - Variables to change when running this script
+# 2. - Variables to set when running this script
 parser = argparse.ArgumentParser()
 parser.add_argument('--git_repo_name', type=str,help="your github repo name")
 parser.add_argument('--package_name', type=str,help="your package repo name")
+parser.add_argument('--add_travis', type=bool, default = True,
+ help="add travis yml (default: True)")
+parser.add_argument('--add_template', type=bool, default = True,
+  help="add notebooks and data folder (default: True)")
 args = parser.parse_args()
 
 git_repo_name = args.git_repo_name
 package_name = args.package_name
+add_travis = args.add_travis # whether or not to add travis yml
+add_template = args.add_template # add notebooks and data folder
 
 
 ############################################
@@ -124,7 +128,7 @@ write_script('./test', test_file_name, test_content)
 ############################################
 
 template_dirs = ['data', 'notebooks']
-if add_template_dirs:
+if add_template:
     for dir in template_dirs:
         if not os.path.exists(dir):
             os.makedirs(dir)
@@ -149,7 +153,7 @@ git add -f ./{1}/__init__.py
 
 if add_travis:
     github_bash_content+='git add -f .travis.yml\n'
-if add_template_dirs:
+if add_template:
     for dir in template_dirs:
         github_bash_content+="""cp .gitignore {}\n""".format(dir)
         github_bash_content+="""git add {}\n""".format(dir)
