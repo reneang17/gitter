@@ -4,7 +4,7 @@ from _utils import write_script, execute_bash_script
 
 git_username = 'reneang17'
 travis_user = 'reneang17'
-git_repo_name = 'giter'
+git_repo_name = 'NONE' # change accordingly
 author = 'Rene Angeles'
 author_email = 'reneang17@gmail.com'
 package_name = 'Giter'
@@ -122,12 +122,15 @@ if add_template_dirs:
 github_bash_content = \
 """#!/bin/bash
 rm -rf .git
+cd ..
+mv giter {0}
+cd {1}
 pip install requirements.txt
 python setup.py install && pytest
 git init
 git add .
-git add -f ./{}/__init__.py
-""".format(package_name)
+git add -f ./{1}/__init__.py
+""".format(git_repo_name, package_name)
 
 if add_travis:
     github_bash_content+='git add -f .travis.yml\n'
