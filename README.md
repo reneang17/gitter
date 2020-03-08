@@ -25,7 +25,7 @@ Then simply add, commit, and push to your repository.
 
 Every time you want to start a new project follow the next steps
 
-1. Create a repository e.g. https://github.com/git_username/git_repo_name
+1. Create a repository e.g. https://<span></span>github.com/git_username/git_repo_name
 
 2. (Optional) Tell (travis to track the repository)[https://travis-ci.com/account/repositories]
 
