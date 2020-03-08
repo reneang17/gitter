@@ -27,7 +27,8 @@ Every time you want to start a new project follow the next steps
 
 2 .- (Optional) Added to the programs follow by travis (https://travis-ci.com/account/repositories)
 
-3 .- Create a folder into you local computer and run
+3 .- Create a folder into your local computer, navigate to it, and clone giter:
+
 $mkdir Awesome_Repo
 
 $cd Awesome_Repo
