@@ -8,7 +8,7 @@ Enjoy!
 
 ## How to use
 
-0 .- (Only once) Fork and clone this repo to your local computer, 
+0. (Only once) Fork and clone this repo to your local computer, 
 open _git_starter.py, customize the following settings
 
 ```python
@@ -25,13 +25,13 @@ Then simply add, commit, and push to your repository.
 
 Every time you want to start a new project follow the next steps
 
-1 .- Create a repo e.g. https://github.com/git_username/git_repo_name
+1. Create a repository e.g. https://github.com/git_username/git_repo_name
 
-2 .- (Optional) Add to the programs follow by travis (https://travis-ci.com/account/repositories)
+2. (Optional) Tell (travis to track the repository)[https://travis-ci.com/account/repositories]
 
-3 .- Clone giter `git cone https://github.com/your_github_username/giter`
+3. Clone giter `git cone https://github.com/your_github_username/giter`
 
-4.- Finally run `_git_starter.py` parsing the following arguments
+4. Finally run `_git_starter.py` parsing the following arguments
 
 | Parameter  | Description | Default |
 | ------------- | ------------- | ------------- |
