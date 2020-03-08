@@ -16,8 +16,11 @@ This repo is supose to give you a template for projects to develope a python pac
 open _git_starter.py, customize the following settings
 
 git_username = 'your_github_username'
+
 travis_user = 'your_travis_username'
+
 author = 'your_name'
+
 author_email = 'your_email'
 
 add, commit, push. 
