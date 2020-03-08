@@ -49,4 +49,4 @@ $python _git_starter.py --git_repo_name Awesome_Repo --package_name Awesome_Pack
 voilà! You can go to (github.com/git_username/git_repo_name)[https://github.com/git_username/git_repo_name] and will find something like this:
 
 
-![library.](./_image_to_illustrate.png)
+![library.](./images/_image_to_illustrate.png)
