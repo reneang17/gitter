@@ -2,10 +2,9 @@
 
 My friend [Tom McClintock](https://github.com/tmcclintock) gave me a seminar on his awesome first 10 commits to start a new data-oriented project using best practices. This is a script I wrote to authomate these commits so you can jump straight to your project. Future improvements will include some data cleaning libraries and some basic exploratory data analysis, for structure and un-structured data.
 
-Enjoy!
+Succincly, clone this repo and run, se detailed instructions below, _git_starter.py. To initialize a project, with a MIT Licence, REAME.md, notebooks, .gitnore, a package, installed (setup.py, requirements.txt), create a test module, smoke test package, and add travis continuous integration support.
 
-To summarize, clone this repo and run, se details below, _git_starter.py. To initialize a project, with a MIT Licence,
-REAME.md, notebooks, .gitnore, a package, installed (setup.py, requirements.txt), create a test module, smoke test package, and add travis continuous integration support.
+Enjoy!
 
 ## How to use. 
 
