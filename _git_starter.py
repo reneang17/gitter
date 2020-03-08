@@ -155,8 +155,8 @@ if add_travis:
     github_bash_content+='git add -f .travis.yml\n'
 if add_template:
     for dir in template_dirs:
-        github_bash_content+="""cp .gitignore {}\n""".format(dir)
-        github_bash_content+="""git add {}\n""".format(dir)
+        github_bash_content+="cp .gitignore {}\n".format(dir)
+        github_bash_content+="git add {}\n".format(dir)
 
 github_bash_content+="""
 git commit -m "first commit"
