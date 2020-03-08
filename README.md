@@ -1,8 +1,8 @@
 # Giter
 
-My friend [Tom McClintock](https://github.com/tmcclintock) gives a seminar on his best 10 commits, that help
-him start a data oriented project using best practices. I typed a script to execute these authomatically,
-this way you can jump straight to your project. Enjoy!
+My friend [Tom McClintock](https://github.com/tmcclintock) gave me a seminar on his awesome first 10 commits to start a new data-oriented project using best practices. This is a script I wrote to authomate these commits so you can jump straight to your project. Future improvements will include some data cleaning libraries and some basic exploratory data analysis, for structure and un-structured data.
+
+Enjoy!
 
 This repo creates and commits for you a template to develope a python package on github.It features awesome development practices: test, setup.py, requirements.txt, and travis continuous integration support.
 
