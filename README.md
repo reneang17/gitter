@@ -25,7 +25,7 @@ author_email = 'your_email'
 
 add, commit, push. 
 
-4. - Finally run _git_starter.py parsing the following arguments
+4.- Finally run _git_starter.py parsing the following arguments
 
 | Parameter  | Description | Default |
 | ------------- | ------------- | ------------- |
