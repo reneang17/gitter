@@ -4,7 +4,7 @@ My friend [Tom McClintock](https://github.com/tmcclintock) gives a seminar on hi
 him start a data oriented project using best practices. I typed a script to execute these authomatically,
 this way you can jump straight to your project. Enjoy!
 
-This repo is supose to give you a template for projects to develope a python package, using some good engineering practices: test, setup.py, requirements.txt, and travis continuous integration support.
+This repo creates and commits for you a template to develope a python package on github.It features awesome development practices: test, setup.py, requirements.txt, and travis continuous integration support.
 
 ## Instributions 
 
