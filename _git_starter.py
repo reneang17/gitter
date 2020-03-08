@@ -121,6 +121,7 @@ if add_template_dirs:
 
 github_bash_content = \
 """#!/bin/bash
+rm -rf .git
 pip install requirements.txt
 python setup.py install && pytest
 git init
