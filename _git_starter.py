@@ -1,19 +1,34 @@
 import os
 from _utils import write_script, execute_bash_script
+import argparse
 
 
+############################################
+## ------- Input variable to change (Only change this section)
+############################################
+
+# 1.- Customize these variables
 git_username = 'reneang17'
 travis_user = 'reneang17'
-git_repo_name = 'NONE' # change accordingly
 author = 'Rene Angeles'
 author_email = 'reneang17@gmail.com'
-package_name = 'Giter'
+add_template_dirs = True # add notebooks and data folder
+add_travis = True # whether or not to add travis yml
 
 
-add_template_dirs = True
-add_travis = True
+# 2. - Variables to change when running this script
+parser = argparse.ArgumentParser()
+parser.add_argument('--git_repo_name', type=str,help="your github repo name")
+parser.add_argument('--package_name', type=str,help="your package repo name")
+args = parser.parse_args()
+
+git_repo_name = args.git_repo_name
+package_name = args.package_name
 
 
+############################################
+## ------- Instructions and variables to parse
+############################################
 
 
 ############################################
