@@ -6,7 +6,7 @@ Succincly, clone this repo and run, se detailed instructions below, _git_starter
 
 Enjoy!
 
-## How to use. 
+## How to use
 
 0 .- (Only once) Fork and clone this repo to your local computer, 
 open _git_starter.py, customize the following settings
