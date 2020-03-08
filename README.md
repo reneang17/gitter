@@ -27,7 +27,7 @@ Every time you want to start a new project follow the next steps
 
 1. Create a repository e.g. https://<span></span>github.com/git_username/git_repo_name
 
-2. (Optional) Tell (travis to track the repository)[https://travis-ci.com/account/repositories]
+2. (Optional) Tell [travis to track the repository](https://travis-ci.com/account/repositories)
 
 3. Clone giter `git cone https://github.com/your_github_username/giter`
 
@@ -46,7 +46,7 @@ e.g.
 $python _git_starter.py --git_repo_name Awesome_Repo --package_name Awesome_Package
 ```
 
-Voilà! You can go to (github.com/git_username/git_repo_name)[https://github.com/git_username/git_repo_name] and will find something like this:
+Voilà! You can go to [github.com/git_username/git_repo_name](https://github.com/git_username/git_repo_name) and will find something like this:
 
 
 ![library.](./images/_image_to_illustrate.png)
