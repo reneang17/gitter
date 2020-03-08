@@ -33,12 +33,12 @@ Every time you want to start a new project follow the next steps
 
 4. Finally run `_git_starter.py` parsing the following arguments
 
-| Parameter  | Description | Default |
-| ------------- | ------------- | ------------- |
-| --git_repo_name | Repo name to commit to | No default |
-| --package_name | The name you want for you package | No default | 
-| --add_travis | Add .yml | True |
-| --add_template | add notebooks and data dirs | True |
+| Parameter       | Description                       | Default |
+| -------------   | -------------                     | ------------- |
+| --git_repo_name | Repo name to commit to            | No default |
+| --package_name  | The name you want for you package | No default | 
+| --add_travis    | Add .yml                          | True |
+| --add_template  | add notebooks and data dirs       | True |
 
 e.g.
 
@@ -46,7 +46,7 @@ e.g.
 $python _git_starter.py --git_repo_name Awesome_Repo --package_name Awesome_Package
 ```
 
-voilà! You can go to (github.com/git_username/git_repo_name)[https://github.com/git_username/git_repo_name] and will find something like this:
+Voilà! You can go to (github.com/git_username/git_repo_name)[https://github.com/git_username/git_repo_name] and will find something like this:
 
 
 ![library.](./images/_image_to_illustrate.png)
