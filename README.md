@@ -8,7 +8,7 @@ Enjoy!
 
 ## How to use
 
-0. (Only once) Fork and clone this repo to your local computer, 
+0. (Only once) Download this repo to your local computer, 
 open _git_starter.py, customize the following settings
 
 ```python
@@ -29,7 +29,7 @@ Every time you want to start a new project follow the next steps
 
 2. (Optional) Tell [travis to track the repository](https://travis-ci.com/account/repositories)
 
-3. Clone giter `git cone https://github.com/your_github_username/giter`
+3. Clone giter `git clone https://github.com/your_github_username/giter`
 
 4. Finally run `_git_starter.py` parsing the following arguments
 
