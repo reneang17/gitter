@@ -142,7 +142,7 @@ github_bash_content = \
 """#!/bin/bash
 rm -rf .git
 cd ..
-mv giter {0}
+mv gitter {0}
 cd {0}
 pip install requirements.txt
 python setup.py install && pytest
