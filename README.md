@@ -1,4 +1,4 @@
-# Giter
+# Gitter
 
 My friend [Tom McClintock](https://github.com/tmcclintock) gave me a seminar on his awesome [first 10 commits](https://docs.google.com/presentation/d/1rJyTpUZPaCXiz43ZHQmCiq-1rEsflbFS8aCv7bgBl7Q/edit?usp=sharing) to start a new data-oriented project using best practices. This is a script I wrote to automate these commits so you can jump straight to your project. Future improvements may include some data cleaning libraries and some basic exploratory data analysis.
 
