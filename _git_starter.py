@@ -161,7 +161,7 @@ if add_template:
 github_bash_content+="""
 git commit -m "first commit"
 git remote add origin {}.git
-git push -u origin master
+git push -u origin main
 """.format(url)
 
 write_script('.', '_first_commit.sh', github_bash_content)
