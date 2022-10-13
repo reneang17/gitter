@@ -44,7 +44,7 @@ readme_content = \
 """.format(package_name)
 if add_travis:
     readme_content+=\
-    "[![Build Status](https://travis-ci.com/{0}/{1}.svg?branch=master)](https://travis-ci.com/{0}/{1})\n".format(travis_username,git_repo_name)
+    "[![Build Status](https://travis-ci.com/{0}/{1}.svg?branch=main)](https://travis-ci.com/{0}/{1})\n".format(travis_username,git_repo_name)
 
 write_script(dir = './', script_name = 'README.md',
     script_content = readme_content)
@@ -160,6 +160,7 @@ if add_template:
 
 github_bash_content+="""
 git commit -m "first commit"
+git branch -M main
 git remote add origin {}.git
 git push -u origin main
 """.format(url)
