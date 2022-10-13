@@ -29,7 +29,7 @@ Every time you want to start a new project follow the next steps
 
 2. (Optional) Tell [travis to track the repository](https://travis-ci.com/account/repositories)
 
-3. Clone gitter `git clone git@github.com/your_github_username/gitter`
+3. Clone gitter `git clone git@github.com:your_github_username/gitter`
 
 4. Finally run `_git_starter.py` parsing the following arguments
 
