@@ -144,7 +144,7 @@ rm -rf .git
 cd ..
 mv gitter {0}
 cd {0}
-pip install requirements.txt
+pip install -r requirements.txt
 python setup.py install && pytest
 git init
 git add .
