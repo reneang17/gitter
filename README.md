@@ -8,7 +8,7 @@ Enjoy!
 
 ## How to use
 
-0. (Only once) Download this repo to your local computer, 
+0. (Only once) Download this repo to your local computer,
 open _git_starter.py, customize the following settings
 
 ```python
@@ -35,15 +35,15 @@ Every time you want to start a new project follow the next steps
 
 | Parameter       | Description                       | Default |
 | -------------   | -------------                     | ------------- |
-| --git_repo_name | Repo name to commit to            | No default |
-| --package_name  | The name you want for you package | No default | 
-| --add_travis    | Add .yml                          | True |
-| --add_template  | add notebooks and data dirs       | True |
+| --repo | Repo name to commit to            | No default |
+| --pack  | The name you want for you package | No default |
+| --travis    | Add .yml                          | True |
+| --template  | add notebooks and data dirs       | True |
 
 e.g.
 
 ```bash
-$python _git_starter.py --git_repo_name Awesome_Repo --package_name Awesome_Package
+$python _git_starter.py --repo Awesome_Repo --pack Awesome_Package
 ```
 
 Voilà! You can go to https://<span></span>github.com/git_username/git_repo_name and will find something like this:
