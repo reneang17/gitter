@@ -79,7 +79,7 @@ write_script(dir = package_name, script_name = package_name + '.py',
 ## ------- create/install setup file
 ############################################
 
-url = ''.join(['https://github.com/',git_username, '/', git_repo_name])
+url = ''.join(['git@github.com:',git_username, '/', git_repo_name])
 packages = [package_name]
 setup_dir = package_name
 setup_content = \
