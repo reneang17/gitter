@@ -16,17 +16,17 @@ author_email = 'reneang17@gmail.com'
 
 # 2. - Variables to set when running this script
 parser = argparse.ArgumentParser()
-parser.add_argument('--git_repo_name', type=str,help="your github repo name")
-parser.add_argument('--package_name', type=str,help="your package repo name")
-parser.add_argument('--add_travis', type=bool, default = True,
+parser.add_argument('--repo', type=str,help="your github repo name")
+parser.add_argument('--pack', type=str,help="your package repo name")
+parser.add_argument('--travis', type=bool, default = True,
  help="add travis yml (default: True)")
 parser.add_argument('--add_template', type=bool, default = True,
   help="add notebooks and data folder (default: True)")
 args = parser.parse_args()
 
-git_repo_name = args.git_repo_name
-package_name = args.package_name
-add_travis = args.add_travis # whether or not to add travis yml
+repo = args.repo
+pack = args.pack
+travis = args.travis # whether or not to add travis yml
 add_template = args.add_template # add notebooks and data folder
 
 
@@ -41,10 +41,10 @@ add_template = args.add_template # add notebooks and data folder
 
 readme_content = \
 """# {}
-""".format(package_name)
-if add_travis:
+""".format(pack)
+if travis:
     readme_content+=\
-    "[![Build Status](https://travis-ci.com/{0}/{1}.svg?branch=main)](https://travis-ci.com/{0}/{1})\n".format(travis_username,git_repo_name)
+    "[![Build Status](https://travis-ci.com/{0}/{1}.svg?branch=main)](https://travis-ci.com/{0}/{1})\n".format(travis_username,repo)
 
 write_script(dir = './', script_name = 'README.md',
     script_content = readme_content)
@@ -54,14 +54,14 @@ write_script(dir = './', script_name = 'README.md',
 ## ------- Create package
 ############################################
 
-if not os.path.exists(package_name):
-    os.makedirs(package_name)
+if not os.path.exists(pack):
+    os.makedirs(pack)
 
-init_content = "from .{} import *".format(package_name)
-write_script(dir = package_name, script_name = '__init__.py',
+init_content = "from .{} import *".format(pack)
+write_script(dir = pack, script_name = '__init__.py',
     script_content = init_content)
 
-inital_object = package_name+'_object'
+inital_object = pack+'_object'
 package_content = \
 """class {}(object):
     def __init__(self):
@@ -70,7 +70,7 @@ package_content = \
     def fizz(self):
         return 'buzz'
 """.format(inital_object)
-write_script(dir = package_name, script_name = package_name + '.py',
+write_script(dir = pack, script_name = pack + '.py',
     script_content = package_content)
 
 
@@ -79,9 +79,9 @@ write_script(dir = package_name, script_name = package_name + '.py',
 ## ------- create/install setup file
 ############################################
 
-url = ''.join(['git@github.com:',git_username, '/', git_repo_name])
-packages = [package_name]
-setup_dir = package_name
+url = ''.join(['git@github.com:',git_username, '/', repo])
+packages = [pack]
+setup_dir = pack
 setup_content = \
 """from distutils.core import setup
 
@@ -91,7 +91,7 @@ author_email = '{}',
 url = '{}',
 packages = {}
 )
-""".format(git_repo_name, author, author_email, url, packages)
+""".format(repo, author, author_email, url, packages)
 write_script('./', 'setup.py', setup_content)
 
 
@@ -101,7 +101,7 @@ write_script('./', 'setup.py', setup_content)
 
 if not os.path.exists('test'):
     os.makedirs('test')
-test_file_name = 'test_' + package_name + '.py'
+test_file_name = 'test_' + pack + '.py'
 test_content = \
 """import numpy as np
 import numpy.testing as npt
@@ -118,7 +118,7 @@ def test_{1}_fizz():
     output = obj.fizz()
 
     npt.assert_equal(output, "buzz")
-""".format(package_name, inital_object)
+""".format(pack, inital_object)
 
 write_script('./test', test_file_name, test_content)
 
@@ -149,9 +149,9 @@ python setup.py install && pytest
 git init
 git add .
 git add -f ./{1}/__init__.py
-""".format(git_repo_name, package_name)
+""".format(repo, pack)
 
-if add_travis:
+if travis:
     github_bash_content+='git add -f .travis.yml\n'
 if add_template:
     for dir in template_dirs:
