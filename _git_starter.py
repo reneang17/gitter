@@ -20,14 +20,14 @@ parser.add_argument('--repo', type=str,help="your github repo name")
 parser.add_argument('--pack', type=str,help="your package repo name")
 parser.add_argument('--travis', type=bool, default = True,
  help="add travis yml (default: True)")
-parser.add_argument('--add_template', type=bool, default = True,
+parser.add_argument('--template', type=bool, default = True,
   help="add notebooks and data folder (default: True)")
 args = parser.parse_args()
 
 repo = args.repo
 pack = args.pack
 travis = args.travis # whether or not to add travis yml
-add_template = args.add_template # add notebooks and data folder
+template = args.template # add notebooks and data folder
 
 
 ############################################
@@ -128,7 +128,7 @@ write_script('./test', test_file_name, test_content)
 ############################################
 
 template_dirs = ['data', 'notebooks']
-if add_template:
+if template:
     for dir in template_dirs:
         if not os.path.exists(dir):
             os.makedirs(dir)
@@ -153,7 +153,7 @@ git add -f ./{1}/__init__.py
 
 if travis:
     github_bash_content+='git add -f .travis.yml\n'
-if add_template:
+if template:
     for dir in template_dirs:
         github_bash_content+="cp .gitignore {}\n".format(dir)
         github_bash_content+="git add {}\n".format(dir)
