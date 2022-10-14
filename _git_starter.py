@@ -89,8 +89,7 @@ url = '{}',
 packages = {}
 )
 """.format(repo, author, author_email, url, packages)
-#write_script('./', 'setup.py', setup_content) # Changed deprecated setup.py
-# to pip install -e
+write_script('./', 'setup.py', setup_content) 
 
 
 ############################################
