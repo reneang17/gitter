@@ -89,7 +89,7 @@ url = '{}',
 packages = {}
 )
 """.format(repo, author, author_email, url, packages)
-write_script('./', 'setup.py', setup_content) 
+write_script('./', 'setup.py', setup_content)
 
 
 ############################################
@@ -144,7 +144,7 @@ cd {0}
 pip install -r requirements.txt
 #python setup.py install && pytest
 pip install -e .
-python pytest
+pytest
 git init
 git add .
 git add -f ./{1}/__init__.py
