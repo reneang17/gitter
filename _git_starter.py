@@ -29,11 +29,9 @@ pack = args.pack
 travis = args.travis # whether or not to add travis yml
 template = args.template # add notebooks and data folder
 
-
 ############################################
 ## ------- Instructions and variables to parse
 ############################################
-
 
 ############################################
 ## ------- Create readme
@@ -48,7 +46,6 @@ if travis:
 
 write_script(dir = './', script_name = 'README.md',
     script_content = readme_content)
-
 
 ################################## = ##########
 ## ------- Create package
@@ -147,7 +144,7 @@ mv gitter {0}
 cd {0}
 pip install -r requirements.txt
 #python setup.py install && pytest
-pip install -e {1}
+pip install -e .
 python pytest
 git init
 git add .
