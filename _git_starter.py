@@ -92,7 +92,8 @@ url = '{}',
 packages = {}
 )
 """.format(repo, author, author_email, url, packages)
-write_script('./', 'setup.py', setup_content)
+#write_script('./', 'setup.py', setup_content) # Changed deprecated setup.py
+# to pip install -e
 
 
 ############################################
@@ -145,7 +146,9 @@ cd ..
 mv gitter {0}
 cd {0}
 pip install -r requirements.txt
-python setup.py install && pytest
+#python setup.py install && pytest
+pip install -e {1}
+python pytest
 git init
 git add .
 git add -f ./{1}/__init__.py
